@@ -1,7 +1,74 @@
-body {
-  background-color: lightgray;
+/* Estilos generales */
+header {
+    text-align: center; /* Centro el contenido del encabezado */
+}
+
+img {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 h1 {
-  color: blue;
+    text-align: center; /* Centro el texto */
+    font-size: 28px; /* Tamaño del texto en pantalla pequeña */
 }
+
+p.texto-bienvenida {
+    text-align: center; /* Centro el texto */
+    font-size: 18px; /* Tamaño del texto en pantalla pequeña */
+}
+
+.boton-iniciar {
+    display: block; /* Hace que el botón ocupe todo el ancho disponible */
+    margin: 20px auto; /* Centra el botón horizontalmente y agrega un margen superior e inferior */
+    padding: 10px 20px; /* Añade relleno al botón */
+    text-align: center; /* Centro el texto del botón */
+    font-size: 20px; /* Tamaño del texto en pantalla pequeña */
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 6px; /* Agrega esquinas redondeadas al botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Media Queries para tamaños de pantalla diferentes */
+@media screen and (min-width: 320px) {
+    /* Estilos para pantallas de al menos 320px de ancho */
+    h1 {
+        font-size: 32px;
+    }
+    p.texto-bienvenida {
+        font-size: 24px;
+    }
+    .boton-iniciar {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Estilos para pantallas de al menos 768px de ancho */
+    h1 {
+        font-size: 48px;
+    }
+    p.texto-bienvenida {
+        font-size: 36px;
+    }
+    .boton-iniciar {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Estilos para pantallas de al menos 1200px de ancho */
+    h1 {
+        font-size: 60px;
+    }
+    p.texto-bienvenida {
+        font-size: 48px;
+    }
+    .boton-iniciar {
+        font-size: 56px;
+    }
+}
+
