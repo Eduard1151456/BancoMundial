@@ -1,9 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Página HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro - Banco Mundial</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Hola, mundo!</h1>
+    <header>
+        <!-- Logo del Banco -->
+        <img src="img/logoBanco.png" alt="Logo Banco Mundial">
+    </header>
+
+    <main>
+        <!-- Texto Manipulable en CSS -->
+        <p class="texto-retiro">Seleccione el monto que desea retirar:</p>
+
+        <!-- Botones de Retiro -->
+        <div class="botones-retiro">
+            <button class="boton-retiro">20,000</button>
+            <button class="boton-retiro">50,000</button>
+            <button class="boton-retiro">80,000</button>
+            <button class="boton-retiro">120,000</button>
+            <button class="boton-retiro">250,000</button>
+            <a href="clave.html" class="boton-otro-valor">Digite otro valor...</a>
+        </div>
+
+        <!-- Botones de Cancelar e Inicio -->
+        <a href="index.html" class="boton-cancelar">Cancelar</a>
+        <a href="inicio.html" class="boton-inicio">Inicio</a>
+    </main>
 </body>
 </html>
