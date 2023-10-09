@@ -1,9 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Página HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clave - Banco Mundial</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Hola, mundo!</h1>
+    <header>
+        <!-- Logo del Banco -->
+        <img src="img/logoBanco.png" alt="Logo Banco Mundial">
+    </header>
+
+    <main>
+        <!-- Texto Manipulable en CSS -->
+        <p class="texto-clave">Ingrese su contraseña:</p>
+
+        <!-- Cuadro de Contraseña Oculta con Asteriscos -->
+        <input type="password" id="contrasena" placeholder="Contraseña" disabled>
+
+        <!-- Matriz de Botones Similar a un Teclado de Teléfono -->
+        <div class="teclado">
+            <div class="fila">
+                <button class="boton-teclado" onclick="agregarCaracter('1')">1</button>
+                <button class="boton-teclado" onclick="agregarCaracter('2')">2</button>
+                <button class="boton-teclado" onclick="agregarCaracter('3')">3</button>
+            </div>
+            <div class="fila">
+                <button class="boton-teclado" onclick="agregarCaracter('4')">4</button>
+                <button class="boton-teclado" onclick="agregarCaracter('5')">5</button>
+                <button class="boton-teclado" onclick="agregarCaracter('6')">6</button>
+            </div>
+            <div class="fila">
+                <button class="boton-teclado" onclick="agregarCaracter('7')">7</button>
+                <button class="boton-teclado" onclick="agregarCaracter('8')">8</button>
+                <button class="boton-teclado" onclick="agregarCaracter('9')">9</button>
+            </div>
+            <div class="fila">
+                <button class="boton-teclado" onclick="agregarCaracter('0')">0</button>
+                <button class="boton-teclado" onclick="agregarCaracter('.')">.</button>
+                <button class="boton-teclado" onclick="agregarCaracter('#')">#</button>
+            </div>
+        </div>
+
+        <!-- Botón para Borrar el Último Caracter -->
+        <button class="boton-borrar" onclick="borrarUltimoCaracter()">Borrar</button>
+
+        <!-- Botones Cancelar y Continuar -->
+        <a href="index.html" class="boton-cancelar">Cancelar</a>
+        <a href="resultado_retiro.html" class="boton-continuar">Continuar</a>
+    </main>
+
+    <script>
+        // Función para agregar caracteres al cuadro de contraseña
+        function agregarCaracter(caracter) {
+            const contrasenaInput = document.getElementById('contrasena');
+            contrasenaInput.value += caracter;
+        }
+
+        // Función para borrar el último caracter en el cuadro de contraseña
+        function borrarUltimoCaracter() {
+            const contrasenaInput = document.getElementById('contrasena');
+            const valorActual = contrasenaInput.value;
+            contrasenaInput.value = valorActual.slice(0, -1);
+        }
+    </script>
 </body>
 </html>
