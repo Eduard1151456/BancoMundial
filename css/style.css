@@ -19,17 +19,39 @@ p.texto-bienvenida {
     font-size: 18px; /* Tamaño del texto en pantalla pequeña */
 }
 
-.boton-iniciar {
-    display: block; /* Hace que el botón ocupe todo el ancho disponible */
-    margin: 20px auto; /* Centra el botón horizontalmente y agrega un margen superior e inferior */
+/* Estilos para los botones */
+.boton {
+    display: inline-block; /* Hace que los botones sean elementos en línea */
     padding: 10px 20px; /* Añade relleno al botón */
-    text-align: center; /* Centro el texto del botón */
     font-size: 20px; /* Tamaño del texto en pantalla pequeña */
     background-color: #3498db; /* Color de fondo del botón */
     color: #fff; /* Color del texto del botón */
     border: none; /* Elimina el borde del botón */
     border-radius: 6px; /* Agrega esquinas redondeadas al botón */
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace (si se usa como botón) */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.boton:hover {
+    background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+/* Estilos para los botones específicos */
+.boton-principal {
+    background-color: #3498db; /* Color de fondo del botón principal */
+}
+
+.boton-secundario {
+    background-color: #e74c3c; /* Color de fondo del botón secundario */
+}
+
+.boton-exito {
+    background-color: #2ecc71; /* Color de fondo del botón de éxito */
+}
+
+.boton-advertencia {
+    background-color: #f39c12; /* Color de fondo del botón de advertencia */
 }
 
 /* Media Queries para tamaños de pantalla diferentes */
@@ -41,7 +63,7 @@ p.texto-bienvenida {
     p.texto-bienvenida {
         font-size: 24px;
     }
-    .boton-iniciar {
+    .boton {
         font-size: 28px;
     }
 }
@@ -54,7 +76,7 @@ p.texto-bienvenida {
     p.texto-bienvenida {
         font-size: 36px;
     }
-    .boton-iniciar {
+    .boton {
         font-size: 40px;
     }
 }
@@ -67,7 +89,7 @@ p.texto-bienvenida {
     p.texto-bienvenida {
         font-size: 48px;
     }
-    .boton-iniciar {
+    .boton {
         font-size: 56px;
     }
 }
