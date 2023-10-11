@@ -1,139 +1,53 @@
-/* Estilos generales */
-header {
-    text-align: center; /* Centro el contenido del encabezado */
-}
-
-img {
-    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
-    display: block; /* Elimina el espacio extra debajo de la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-}
-
-h1 {
-    text-align: center; /* Centro el texto */
-    font-size: 28px; /* Tamaño del texto en pantalla pequeña */
-}
-
-p.texto-bienvenida {
-    text-align: center; /* Centro el texto */
-    font-size: 18px; /* Tamaño del texto en pantalla pequeña */
-}
-
-/* Estilos para los botones */
-.boton {
-    display: inline-block; /* Hace que los botones sean elementos en línea */
-    padding: 10px 20px; /* Añade relleno al botón */
-    font-size: 20px; /* Tamaño del texto en pantalla pequeña */
-    background-color: #3498db; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    border: none; /* Elimina el borde del botón */
-    border-radius: 6px; /* Agrega esquinas redondeadas al botón */
-    text-decoration: none; /* Elimina el subrayado del enlace (si se usa como botón) */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón por encima */
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-}
-
-.boton:hover {
-    background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón por encima */
-}
-
-/* Estilos para los botones específicos */
-.boton-principal {
-    background-color: #3498db; /* Color de fondo del botón principal */
-}
-
-.boton-secundario {
-    background-color: #e74c3c; /* Color de fondo del botón secundario */
-}
-
-.boton-exito {
-    background-color: #2ecc71; /* Color de fondo del botón de éxito */
-}
-
-.boton-advertencia {
-    background-color: #f39c12; /* Color de fondo del botón de advertencia */
-}
-
-/* Media Queries para tamaños de pantalla diferentes */
-@media screen and (min-width: 320px) {
-    /* Estilos para pantallas de al menos 320px de ancho */
-    h1 {
-        font-size: 32px;
-    }
-    p.texto-bienvenida {
-        font-size: 24px;
-    }
-    .boton {
-        font-size: 28px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    /* Estilos para pantallas de al menos 768px de ancho */
-    h1 {
-        font-size: 48px;
-    }
-    p.texto-bienvenida {
-        font-size: 36px;
-    }
-    .boton {
-        font-size: 40px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    /* Estilos para pantallas de al menos 1200px de ancho */
-    h1 {
-        font-size: 60px;
-    }
-    p.texto-bienvenida {
-        font-size: 48px;
-    }
-    .boton {
-        font-size: 56px;
-    }
-}
-/* Estilos para el logo y el texto móvil */
-img {
-    max-width: 100px; /* Tamaño máximo del logo */
-    float: left; /* Flotar a la izquierda */
-    margin-right: 20px; /* Espacio a la derecha del logo */
-}
-
-.texto-movil {
-    margin-top: 0; /* Eliminar el margen superior predeterminado */
-}
-
-/* Estilos para los botones */
-.boton-operacion {
-    display: block;
-    margin-top: 10px; /* Espacio entre los botones */
-    background-color: #3498db;
-    color: #fff;
+/* Estilos para la página de inicio */
+.pagina-inicio {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     text-align: center;
+}
+
+.pagina-inicio header {
+    margin-bottom: 20px;
+}
+
+.pagina-inicio .texto-bienvenida {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.boton-iniciar {
+    background-color: #007bff;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
+    border-radius: 5px;
 }
 
-.boton-cancelar {
-    display: block;
-    margin-top: 10px;
-    background-color: #ccc; /* Color de fondo gris */
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    border-radius: 6px;
-    font-size: 18px;
+/* Media queries para diseño responsivo */
+@media (max-width: 768px) {
+    .boton-iniciar {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}
+/* Estilos base comunes para todas las resoluciones */
+/* ... */
+
+/* Estilos para resoluciones pequeñas (móviles) */
+@media (max-width: 576px) {
+    /* Estilos específicos para pantallas pequeñas */
 }
 
-/* Estilos específicos para los botones de "Consultar Saldo" y "Cambiar Clave" */
-.boton-operacion:nth-child(2),
-.boton-operacion:nth-child(3) {
-    margin-left: 20px; /* Espacio entre "Consultar Saldo" y "Cambiar Clave" */
+/* Estilos para resoluciones medianas (tabletas) */
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Estilos específicos para pantallas medianas */
+}
+
+/* Estilos para resoluciones grandes (computadoras de escritorio) */
+@media (min-width: 993px) {
+    /* Estilos específicos para pantallas grandes */
 }
 
