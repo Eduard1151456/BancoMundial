@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="img/logoBanco.png" alt="Logo Banco Mundial">
+        <img src="img/logoBanco.png" alt="Logo Banco Mundial"width="200">
     </header>
 
     <main>
@@ -39,14 +39,18 @@
             </div>
         </div>
 
-        <button class="boton-borrar" onclick="borrarUltimoCaracter()">Borrar</button>
+<div class="botones-container">
+    
+        <button class="boton-iniciar" onclick="borrarUltimoCaracter()">Borrar</button>
 
-        <!-- Botones Cancelar y Continuar -->
+        <div class="boton-group">
         <a href="index.html" class="boton-cancelar">Cancelar</a>
-        <a href="resultado_retiro.html" class="boton-continuar">Continuar</a>
-    </main>
+        <a href="resultado_retiro.html" class="boton-iniciar">Continuar</a>
+        </div>
+</div>
 
-    <script>
+    </main>
+    <script> 
         function agregarCaracter(caracter) {
             const contrasenaInput = document.getElementById('contrasena');
             contrasenaInput.value += caracter;
