@@ -8,18 +8,14 @@
 </head>
 <body>
     <header>
-        <!-- Logo del Banco -->
         <img src="img/logoBanco.png" alt="Logo Banco Mundial">
     </header>
 
     <main>
-        <!-- Texto Manipulable en CSS -->
         <p class="texto-clave">Ingrese su contraseña:</p>
 
-        <!-- Cuadro de Contraseña Oculta con Asteriscos -->
         <input type="password" id="contrasena" placeholder="Contraseña" disabled>
 
-        <!-- Matriz de Botones Similar a un Teclado de Teléfono -->
         <div class="teclado">
             <div class="fila">
                 <button class="boton-teclado" onclick="agregarCaracter('1')">1</button>
@@ -43,7 +39,6 @@
             </div>
         </div>
 
-        <!-- Botón para Borrar el Último Caracter -->
         <button class="boton-borrar" onclick="borrarUltimoCaracter()">Borrar</button>
 
         <!-- Botones Cancelar y Continuar -->
@@ -52,13 +47,10 @@
     </main>
 
     <script>
-        // Función para agregar caracteres al cuadro de contraseña
         function agregarCaracter(caracter) {
             const contrasenaInput = document.getElementById('contrasena');
             contrasenaInput.value += caracter;
         }
-
-        // Función para borrar el último caracter en el cuadro de contraseña
         function borrarUltimoCaracter() {
             const contrasenaInput = document.getElementById('contrasena');
             const valorActual = contrasenaInput.value;

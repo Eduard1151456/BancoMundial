@@ -1,4 +1,4 @@
-/* Estilos para la página de inicio */
+
 .pagina-inicio {
     display: flex;
     flex-direction: column;
@@ -20,12 +20,12 @@
 .boton-iniciar {
     background-color: #007bff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px 0 0 0;
+    margin: 5px;
 }
 
-/* Media queries para diseño responsivo */
 @media (max-width: 768px) {
     .boton-iniciar {
         padding: 8px 16px;
@@ -33,93 +33,75 @@
     }
 }
 
-/* Estilos base comunes para todas las resoluciones */
-/* ... */
-
-/* Estilos para resoluciones pequeñas (móviles) */
 @media (max-width: 576px) {
-    /* Estilos específicos para pantallas pequeñas */
+   
 }
 
-/* Estilos para resoluciones medianas (tabletas) */
+
 @media (min-width: 577px) and (max-width: 992px) {
-    /* Estilos específicos para pantallas medianas */
+    
 }
 
-/* Estilos para resoluciones grandes (computadoras de escritorio) */
+
 @media (min-width: 993px) {
-    /* Estilos específicos para pantallas grandes */
+    
 }
 
-/* Estilos específicos para la página de "Operaciones" */
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.logo {
-    max-width: 50%;
-}
-
 h1 {
-    font-size: 24px; /* Tamaño de fuente para el título */
+    font-size: 24px; 
 }
 
-.botones-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-/* Estilos para todos los botones */
-.boton-comun {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px; /* Espacio entre los botones */
-}
 
-/* Media query para diseño responsivo */
+
 @media (max-width: 768px) {
-    .boton-comun {
+    .boton-iniciar {
         padding: 8px 16px;
         font-size: 16px;
     }
 }
 .botones-container {
     display: flex;
-    flex-direction: column; /* Para apilar los grupos verticalmente */
+    flex-direction: column; 
     align-items: center;
     margin-top: 20px;
 }
 .boton-group {
-    display: flex;
-    justify-content: space-between; /* Los botones se separan en dos grupos */
-    margin: 5px 0; /* Espacio entre los grupos */
+display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px; 
 }
 
 .boton-cancelar {
-    background-color: #ccc; /* Fondo gris para el botón "Cancelar" */
+    background-color: #ccc; 
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 20px;
     text-decoration: none;
-    border-radius: 0 5px 0 0; /* Esquina superior derecha redondeada */
-    margin: 5px; /* Espacio entre los botones */
+    border-radius: 0 20px 0 0; 
+    margin: 5px; 
 }
 @media (max-width: 768px) {
-    .boton-comun,
+    .boton-iniciar,
     .boton-cancelar {
         padding: 8px 16px;
         font-size: 16px;
     }
+}
+
+.logo-text-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.logo-container {
+    margin-right: 20px; 
+}
+.texto-movil {
+    word-wrap: break-word; 
 }
