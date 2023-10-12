@@ -8,8 +8,9 @@
 </head>
 <body>
     <header>
-        <!-- Logo del Banco -->
-        <img src="img/logoBanco.png" alt="Logo Banco Mundial">
+        <div class="logo-container">
+            <img src="img/logoBanco.png" alt="Logo Banco Mundial" width="200">
+        </div>
     </header>
 
     <main>
@@ -18,12 +19,18 @@
         <!-- Texto Móvil con Clase -->
         <p class="texto-movil">El Banco Mundial tiene un conjunto de servicios a su disposición. Seleccione la acción que desea realizar.</p>
 
-        <!-- Botones de Operaciones -->
-        <a href="retiro.html" class="boton-operacion">Realizar Retiro</a>
-        <a href="clave.html" class="boton-operacion">Consultar Saldo</a>
-        <a href="clave.html" class="boton-operacion">Cambiar Clave</a>
-        <a href="otros_servicios.html" class="boton-operacion">Otros Servicios</a>
-        <a href="index.html" class="boton-cancelar">Cancelar</a>
+        <!-- Contenedor de Botones de Operaciones -->
+        <div class="botones-container">
+          <div class="boton-group">
+        <a href="retiro.html" class=".boton-comun">Realizar Retiro</a>
+        <a href="clave.html" class=".boton-comun">Consultar Saldo</a>
+    </div>
+         <div class="boton-group">
+        <a href="clave.html" class=".boton-comun">Cambiar Clave</a>
+        <a href="otros_servicios.html" class=".boton-comun">Otros Servicios</a>
+    </div>
+    <a href="index.html" class="boton-cancelar">Cancelar</a>
+        </div>
     </main>
 </body>
 </html>
